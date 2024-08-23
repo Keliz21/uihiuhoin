@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Formulario</h2>
+        <form>
+            <div class="form-group row">
+                <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="cedula" class="col-sm-2 col-form-label">Número de Cédula:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="cedula" name="cedula" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="fechaNacimiento" class="col-sm-2 col-form-label">Fecha de Nacimiento:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ciudad" class="col-sm-2 col-form-label">Ciudad:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="correo" class="col-sm-2 col-form-label">Correo:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="direccion" class="col-sm-2 col-form-label">Dirección:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="direccion" name="direccion" rows="3" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="estadoCivil" class="col-sm-2 col-form-label">Estado Civil:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="estadoCivil" name="estadoCivil" required>
+                        <option>Soltero/a</option>
+                        <option>Casado/a</option>
+                        <option>Divorciado/a</option>
+                        <option>Viudo/a</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="etnia" class="col-sm-2 col-form-label">Etnia:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="etnia" name="etnia" required>
+                        <option>Mestizo/a</option>
+                        <option>Indígena</option>
+                        <option>Afrodescendiente</option>
+                        <option>Blanco/a</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="genero" class="col-sm-2 col-form-label">Género:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="genero" name="genero" required>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>No binario</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Hábitos:</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="fuma" name="fuma">
+                        <label class="form-check-label" for="fuma">Fuma</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="alcohol" name="alcohol">
+                        <label class="form-check-label" for="alcohol">Toma alcohol</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="drogas" name="drogas">
+                        <label class="form-check-label" for="drogas">Consume drogas</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
